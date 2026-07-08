@@ -646,6 +646,46 @@
                 © <!-- -->2026<!-- --> The Burnout Society &amp; Coffee Co. — No BS Service.</div>
         </footer>
     </div><!--/$-->
+<script type="text/javascript">
+  document.addEventListener("DOMContentLoaded", function() {
+    var tabs = document.querySelectorAll(".sticky.top-16 button");
+    var sections = [
+      document.getElementById("espresso"),
+      document.getElementById("cold"),
+      document.getElementById("filter"),
+      document.getElementById("food")
+    ];
+    
+    function showSection(index) {
+      sections.forEach(function(sec, i) {
+        if (!sec) return;
+        if (i === index) {
+          sec.style.display = "block";
+        } else {
+          sec.style.display = "none";
+        }
+      });
+      tabs.forEach(function(tab, i) {
+        if (i === index) {
+          tab.className = tab.className.replace("border-border text-muted-foreground hover:text-foreground", "border-highlight text-highlight");
+          tab.classList.add("border-highlight", "text-highlight");
+        } else {
+          tab.className = tab.className.replace("border-highlight text-highlight", "border-border text-muted-foreground hover:text-foreground");
+          tab.classList.remove("border-highlight", "text-highlight");
+        }
+      });
+    }
+
+    tabs.forEach(function(tab, index) {
+      tab.addEventListener("click", function() {
+        showSection(index);
+      });
+    });
+
+    // Default to show the first section (Espresso Based)
+    showSection(0);
+  });
+</script>
 </body>
 
 </html>
