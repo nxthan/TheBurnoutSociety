@@ -1,0 +1,8 @@
+{
+  "name": "the-burnout-society",
+  "version": "1.0.0",
+  "description": "Static deployment for The Burnout Society",
+  "scripts": {
+    "build": "echo 'Static build'"
+  }
+}
