@@ -1,4 +1,5 @@
 [build]
+  command = ""
   publish = "."
 
 # Redirect rules to enable clean, pretty URLs for Netlify
