@@ -1,5 +1,5 @@
 [build]
-  command = ""
+  command = "echo 'Static build'"
   publish = "."
 
 # Redirect rules to enable clean, pretty URLs for Netlify
