@@ -1,0 +1,18 @@
+[build]
+  publish = "."
+
+# Redirect rules to enable clean, pretty URLs for Netlify
+[[redirects]]
+  from = "/coffee"
+  to = "/coffee.html"
+  status = 200
+
+[[redirects]]
+  from = "/about"
+  to = "/about.html"
+  status = 200
+
+[[redirects]]
+  from = "/delivery"
+  to = "/delivery.html"
+  status = 200
